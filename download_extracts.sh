@@ -24,7 +24,9 @@ wget http://download.geofabrik.de/europe-latest.osm.pbf -O pbffiles/europe-lates
 echo "Baixando Asia (~? ) ..."
 wget http://download.geofabrik.de/asia-latest.osm.pbf  -O pbffiles/asia-latest.osm.pbf
 
-rm -f mundo.osm.pbf
-osmium merge --verbose *.osm.pbf -o mundo.osm.pbf --overwrite
+#rm -f mundo.osm.pbf
+#osmium merge --verbose *.osm.pbf -o mundo.osm.pbf --overwrite
+
+#osmosis --read-pbf file=arquivo_1.osm.pbf --read-pbf file=arquivo_2.osm.pbf --merge --write-pbf  file=mundo.osm.pbf
 
 
