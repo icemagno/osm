@@ -131,7 +131,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.6</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>        
@@ -148,7 +148,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.7</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.6</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>  
@@ -165,7 +165,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.9</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.8</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>     
@@ -182,7 +182,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.4</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.1</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>  
@@ -198,7 +198,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.8</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.2</sld:CssParameter>
          </sld:Stroke>
        </sld:LineSymbolizer>
      </sld:Rule>           

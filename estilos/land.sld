@@ -20,10 +20,10 @@
           <Title>Poligono cinza claro</Title>
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#fcfcfc</CssParameter>
+              <CssParameter name="fill">#f9f9f9</CssParameter>
             </Fill>
             <Stroke>
-              <CssParameter name="stroke">#fcfcfc</CssParameter>
+              <CssParameter name="stroke">#f9f9f9</CssParameter>
               <CssParameter name="stroke-width">0</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
