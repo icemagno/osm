@@ -77,7 +77,7 @@ psql -U postgres -h localhost -d osm -H -c "refresh materialized view layers.\"a
 TIME=$(date +"%T")
 echo "$TIME - Termino da atualizacao de visoes. Iniciando VACUUM."
 
-psql -U postgres -h localhost -d osm -H -c 'VACUUM FULL VERBOSE ANALYZE osm'
+psql -U postgres -h localhost -d osm -H -c 'VACUUM FULL VERBOSE ANALYZE'
 
 
 TIME=$(date +"%T")

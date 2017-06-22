@@ -182,13 +182,6 @@ CREATE INDEX "placenames-medium_id_idx" ON layers."placenames-medium" USING btre
 ----------------- POLIGONOS -----------------------
 */
 
-/*
-drop materialized view  if exists layers."estados";
-create materialized view layers."estados" AS ( SELECT osm_id, "name", ref, way_area,tags->'flag' as flag, way FROM planet_osm_polygon
-          WHERE place = 'state' order by osm_id);
-CREATE INDEX "estados_way_idx" ON layers."estados" USING gist (way);
-CREATE INDEX "estados_id_idx" ON layers."estados" USING btree (osm_id);
-
 drop materialized view  if exists layers."parking-area";
 create materialized view layers."parking-area" AS (
   SELECT osm_id, way,amenity 
@@ -197,7 +190,7 @@ create materialized view layers."parking-area" AS (
 );
 CREATE INDEX "parking-area_way_idx" ON layers."parking-area" USING gist (way);
 CREATE INDEX "parking-area_id_idx" ON layers."parking-area" USING btree (osm_id);
-*/
+
 
 drop materialized view  if exists layers."forest";
 create materialized view layers."forest" AS ( SELECT osm_id,"natural",way_area, way, landuse, (CASE 
