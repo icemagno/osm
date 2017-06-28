@@ -136,7 +136,7 @@ create materialized view sinamob."onu_p" AS (
 select 
 	osm_id,
 	name,
-	"addr:street" as street,
+	tags->'addr:street' as street,
 	tags->'alt_name' as alt_name,
 	tags->'addr:city' as city,
 	tags->'diplomatic' as diplomatic,
@@ -153,7 +153,7 @@ create materialized view sinamob."onu_a" AS (
 select 
 	osm_id,
 	name,
-	"addr:street" as street,
+	tags->'addr:street' as street,
 	tags->'alt_name' as alt_name,
 	tags->'addr:city' as city,
 	tags->'diplomatic' as diplomatic,
