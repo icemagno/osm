@@ -10,10 +10,18 @@
         <sld:Rule>
          <!-- 1:35 ate 1:9 -->
          <!-- MIN: 9  000000.0 --> 
-         <!-- MAX: 17 000000.0 --> 
+         <!-- MAX: 18 000000.0 --> 
          <sld:MinScaleDenominator>9000000.0</sld:MinScaleDenominator>
-         <sld:MaxScaleDenominator>17000000.0</sld:MaxScaleDenominator>          
+         <sld:MaxScaleDenominator>18000000.0</sld:MaxScaleDenominator>          
          <sld:TextSymbolizer>
+           
+        <sld:Geometry>
+          <ogc:Function name="centroid">
+            <ogc:PropertyName>geom</ogc:PropertyName>
+          </ogc:Function>
+        </sld:Geometry>           
+           
+           
            <sld:Label>
              <ogc:PropertyName>name</ogc:PropertyName>
            </sld:Label>
@@ -51,6 +59,13 @@
          <sld:MinScaleDenominator>4000000.0</sld:MinScaleDenominator>
          <sld:MaxScaleDenominator>9000000.0</sld:MaxScaleDenominator>          
          <sld:TextSymbolizer>
+           
+        <sld:Geometry>
+          <ogc:Function name="centroid">
+            <ogc:PropertyName>geom</ogc:PropertyName>
+          </ogc:Function>
+        </sld:Geometry>                
+           
            <sld:Label>
              <ogc:PropertyName>name</ogc:PropertyName>
            </sld:Label>
@@ -87,9 +102,9 @@
         <sld:Rule>
          <!-- 1:35 ate 1:9 -->
          <!-- MIN: 9  000000.0 --> 
-         <!-- MAX: 17 000000.0 --> 
+         <!-- MAX: 18 000000.0 --> 
          <sld:MinScaleDenominator>9000000.0</sld:MinScaleDenominator>
-         <sld:MaxScaleDenominator>17000000.0</sld:MaxScaleDenominator>          
+         <sld:MaxScaleDenominator>18000000.0</sld:MaxScaleDenominator>          
           
           <sld:LineSymbolizer>
             <sld:Stroke>

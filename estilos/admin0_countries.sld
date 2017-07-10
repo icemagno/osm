@@ -14,6 +14,14 @@
          <sld:MinScaleDenominator>90000000.0</sld:MinScaleDenominator>
          <sld:MaxScaleDenominator>140000000.0</sld:MaxScaleDenominator>
          <sld:TextSymbolizer>
+           
+           
+        <sld:Geometry>
+          <ogc:Function name="centroid">
+            <ogc:PropertyName>geom</ogc:PropertyName>
+          </ogc:Function>
+        </sld:Geometry>           
+           
            <sld:Label>
              <ogc:PropertyName>name</ogc:PropertyName>
            </sld:Label>
@@ -52,6 +60,15 @@
          <sld:MinScaleDenominator>35000000.0</sld:MinScaleDenominator>
          <sld:MaxScaleDenominator>90000000.0</sld:MaxScaleDenominator>
          <sld:TextSymbolizer>
+           
+           
+        <sld:Geometry>
+          <ogc:Function name="centroid">
+            <ogc:PropertyName>geom</ogc:PropertyName>
+          </ogc:Function>
+        </sld:Geometry>                
+           
+           
            <sld:Label>
              <ogc:PropertyName>name</ogc:PropertyName>
            </sld:Label>
@@ -90,6 +107,14 @@
          <sld:MinScaleDenominator>17000000.0</sld:MinScaleDenominator>
          <sld:MaxScaleDenominator>35000000.0</sld:MaxScaleDenominator>
          <sld:TextSymbolizer>
+           
+           
+        <sld:Geometry>
+          <ogc:Function name="centroid">
+            <ogc:PropertyName>geom</ogc:PropertyName>
+          </ogc:Function>
+        </sld:Geometry>                
+           
            <sld:Label>
              <ogc:PropertyName>name</ogc:PropertyName>
            </sld:Label>
