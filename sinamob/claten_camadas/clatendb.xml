@@ -1,0 +1,14 @@
+<dataStore>
+  <name>clatendb</name>
+  <description>Banco de Dados do CLATEN - Postgres</description>
+  <connectionParameters>
+    <host>10.5.115.26</host>
+    <port>5432</port>
+    <database>claten</database>
+	<schema>soa</schema>
+    <user>geoserver</user>
+    <passwd>G305erV31</passwd>
+    <dbtype>postgis</dbtype>
+  </connectionParameters>
+</dataStore>
+
