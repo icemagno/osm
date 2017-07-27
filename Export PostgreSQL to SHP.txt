@@ -1,0 +1,12 @@
+The recommended way to do this is using the pgsql2shp utility, which should be installed with PostGIS. Note that you must include the geometry column in the query.
+
+$ pgsql2shp -f <path to output shapefile> -h <hostname> -u <username> -P <password> databasename "<query>"
+Example (creates qds_cnt.shp in current directory):
+
+$ pgsql2shp -f qds_cnt -h localhost -u postgres -P password gisdb "SELECT sp_count, geom FROM grid50_rsa WHERE province = 'Gauteng'"
+
+Initializing... 
+Done (postgis major version: 2).
+Output shape: Polygon
+Dumping: XXXXXXXXXXXXXXXXXXXX [1947 rows].
+If you wanted to save a whole table as a shapefile, just use the table name as the query.
