@@ -1,0 +1,5 @@
+create table municipios_brasil as (
+select pp.osm_id,pp.admin_level,pp.name,pp.population,pp.way,pp.tags->'IBGE:GEOCODIGO' as geocodigo from planet_osm_polygon pp 
+	join layers.admin0_countries cc on pp.way && cc.geom
+where pp.admin_level = '8' and cc.name = 'Brasil'
+)
