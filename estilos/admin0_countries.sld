@@ -27,7 +27,7 @@
            </sld:Label>
            <sld:Font>
               <sld:CssParameter name="font-family">Dialog</sld:CssParameter>
-              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
+              <sld:CssParameter name="font-size">6.0</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">normal</sld:CssParameter>
            </sld:Font>
@@ -74,7 +74,7 @@
            </sld:Label>
            <sld:Font>
               <sld:CssParameter name="font-family">Dialog</sld:CssParameter>
-              <sld:CssParameter name="font-size">18.0</sld:CssParameter>
+              <sld:CssParameter name="font-size">9.0</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">normal</sld:CssParameter>
            </sld:Font>
@@ -120,7 +120,7 @@
            </sld:Label>
            <sld:Font>
               <sld:CssParameter name="font-family">Dialog</sld:CssParameter>
-              <sld:CssParameter name="font-size">20.0</sld:CssParameter>
+              <sld:CssParameter name="font-size">15.0</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">normal</sld:CssParameter>
            </sld:Font>
@@ -156,7 +156,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.1</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>        
@@ -173,7 +173,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.6</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.3</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>  
@@ -190,7 +190,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.8</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>     
@@ -207,7 +207,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.1</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.7</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>  
@@ -223,7 +223,7 @@
               <sld:CssParameter name="stroke">#cccccc</sld:CssParameter>
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.2</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
          </sld:Stroke>
        </sld:LineSymbolizer>
      </sld:Rule>           

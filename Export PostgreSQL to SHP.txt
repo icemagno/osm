@@ -1,12 +1,16 @@
-The recommended way to do this is using the pgsql2shp utility, which should be installed with PostGIS. Note that you must include the geometry column in the query.
 
-$ pgsql2shp -f <path to output shapefile> -h <hostname> -u <username> -P <password> databasename "<query>"
-Example (creates qds_cnt.shp in current directory):
+Export:
 
-$ pgsql2shp -f qds_cnt -h localhost -u postgres -P password gisdb "SELECT sp_count, geom FROM grid50_rsa WHERE province = 'Gauteng'"
+$ pgsql2shp -f the_shape_file -h localhost -u postgres -P password the_database "SELECT sp_count, geom FROM the_table WHERE province = 'Gauteng'"
 
-Initializing... 
-Done (postgis major version: 2).
-Output shape: Polygon
-Dumping: XXXXXXXXXXXXXXXXXXXX [1947 rows].
 If you wanted to save a whole table as a shapefile, just use the table name as the query.
+
+
+Import:
+
+shp2pgsql -g geom -s 4326 -I -D the_shape_file.shp the_table | psql -U postgres -h localhost -d the_database
+
+
+shp2pgsql -g geom -s 4326 -I -W "latin1" -D AU_2017_AglomeradosSubnormais2010_Limites.shp layers.favelas | psql -U postgres -h localhost -d osm
+
+para append usar -a

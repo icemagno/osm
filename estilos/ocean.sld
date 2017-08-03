@@ -9,7 +9,7 @@
           <sld:MaxScaleDenominator>12500.0</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#b7d2ff</sld:CssParameter>
+              <sld:CssParameter name="fill">#b5d0d0</sld:CssParameter>
             </sld:Fill>
           </sld:PolygonSymbolizer>
         </sld:Rule>
@@ -18,7 +18,7 @@
           <sld:MaxScaleDenominator>50000.0</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#d3e4ff</sld:CssParameter>
+              <sld:CssParameter name="fill">#b5d0d0</sld:CssParameter>
             </sld:Fill>
           </sld:PolygonSymbolizer>
         </sld:Rule>
@@ -27,7 +27,7 @@
           <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#ddeaff</sld:CssParameter>
+              <sld:CssParameter name="fill">#b5d0d0</sld:CssParameter>
             </sld:Fill>
           </sld:PolygonSymbolizer>
         </sld:Rule>
@@ -35,7 +35,7 @@
           <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#e2edff</sld:CssParameter>
+              <sld:CssParameter name="fill">#b5d0d0</sld:CssParameter>
             </sld:Fill>
           </sld:PolygonSymbolizer>
         </sld:Rule>
