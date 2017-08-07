@@ -178,6 +178,23 @@ create materialized view layers."placenames-medium" AS (
 CREATE INDEX "placenames-medium_way_idx" ON layers."placenames-medium" USING gist (way);
 CREATE INDEX "placenames-medium_id_idx" ON layers."placenames-medium" USING btree (osm_id);
 
+
+
+drop materialized view  if exists layers."country-capitals";
+create materialized view layers."country-capitals" AS ( 
+	select osm_id, name,place,population, tags->'name:en' as name_en, tags->'name:pt' as name_pt, way from planet_osm_point where capital='yes'
+);
+CREATE INDEX "country-capitals_way_idx" ON layers."country-capitals" USING gist (way);
+CREATE INDEX "country-capitals_id_idx" ON layers."country-capitals" USING btree (osm_id);
+
+
+drop materialized view  if exists layers."state-capitals";
+create materialized view layers."state-capitals" AS ( 
+	select osm_id, name,place,population, tags->'name:en' as name_en, tags->'name:pt' as name_pt, way from planet_osm_point where capital='4'
+);
+CREATE INDEX "state-capitals_way_idx" ON layers."state-capitals" USING gist (way);
+CREATE INDEX "state-capitals_id_idx" ON layers."state-capitals" USING btree (osm_id);
+
 /*
 ----------------- POLIGONOS -----------------------
 */

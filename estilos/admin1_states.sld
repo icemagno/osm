@@ -10,9 +10,9 @@
         <sld:Rule>
          <!-- 1:35 ate 1:9 -->
          <!-- MIN: 9  000000.0 --> 
-         <!-- MAX: 18 000000.0 --> 
+         <!-- MAX: 17 000000.0 --> 
          <sld:MinScaleDenominator>9000000.0</sld:MinScaleDenominator>
-         <sld:MaxScaleDenominator>18000000.0</sld:MaxScaleDenominator>          
+         <sld:MaxScaleDenominator>17000000.0</sld:MaxScaleDenominator>          
          <sld:TextSymbolizer>
            
         <sld:Geometry>

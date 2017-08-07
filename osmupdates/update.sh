@@ -74,6 +74,10 @@ psql -U postgres -h localhost -d osm -H -c "refresh materialized view layers.\"a
 psql -U postgres -h localhost -d osm -H -c "refresh materialized view layers.\"agriculture\"; "
 psql -U postgres -h localhost -d osm -H -c "refresh materialized view layers.\"aero-poly\"; "
 
+psql -U postgres -h localhost -d osm -H -c "refresh materialized view layers.\"state-capitals\"; "
+psql -U postgres -h localhost -d osm -H -c "refresh materialized view layers.\"country-capitals\"; "
+
+
 TIME=$(date +"%T")
 echo "$TIME - Termino da atualizacao de visoes. Iniciando VACUUM."
 
