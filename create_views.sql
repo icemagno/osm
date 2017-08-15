@@ -178,7 +178,25 @@ create materialized view layers."placenames-medium" AS (
 CREATE INDEX "placenames-medium_way_idx" ON layers."placenames-medium" USING gist (way);
 CREATE INDEX "placenames-medium_id_idx" ON layers."placenames-medium" USING btree (osm_id);
 
+/*
 
+drop materialized view  if exists layers."state-capitals";
+create materialized view layers."state-capitals" AS ( 
+	SELECT osm_id, name,place,population, admin_level, capital, tags->'name:en' as name_en, tags->'name:pt' as name_pt, way
+	FROM planet_osm_point
+	JOIN (
+	    SELECT ltrim(member, 'n')::bigint AS osm_id
+	    FROM (
+		SELECT unnest(members) AS member
+		FROM planet_osm_rels
+		WHERE ARRAY['boundary','administrative']<@tags AND ARRAY['admin_level','4']<@tags) u
+	    WHERE member LIKE 'n%') x
+	USING(osm_id)
+);
+
+
+
+*/
 
 drop materialized view  if exists layers."country-capitals";
 create materialized view layers."country-capitals" AS ( 

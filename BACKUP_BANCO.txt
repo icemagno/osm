@@ -1,1 +1,1 @@
-pg_dump.exe --file "contour_curves.backup" --host "localhost" --port "5432" --username "postgres" --no-password --verbose --format=t --blobs "contour"
+pg_dump --file "contour_curves.backup" --host "localhost" --port "5432" --username "postgres" --no-password --verbose --format=t --blobs "contour"
