@@ -339,7 +339,7 @@ CREATE INDEX "water-outline_id_idx" ON layers."water-outline" USING btree (osm_i
 
 drop materialized view  if exists layers."water";
 create materialized view layers."water" AS ( 
-  SELECT osm_id, "natural", "landuse", "waterway", "way"
+  SELECT osm_id, "natural", "landuse", "waterway", "way", "name"
   FROM planet_osm_polygon
   WHERE "natural" IN ('lake','water')
   OR "waterway" IN ('canal','mill_pond','riverbank')
