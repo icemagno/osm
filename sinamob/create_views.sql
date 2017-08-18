@@ -1,6 +1,4 @@
-﻿/* ------------------------------------------------------------------------------------- */
-/* ESPECIAL PARA OPERAÇÃO JUN/2017 **** APAGAR ****
-/* ------------------------------------------------------------------------------------- */
+﻿
 drop materialized view if exists sinamob."rios_esp_line"; 
 create materialized view sinamob."rios_esp_line" AS (
  SELECT osm_id,
