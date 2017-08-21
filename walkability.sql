@@ -138,6 +138,8 @@ where
 );
 
 ----------------------------------------------------------------------------------------------------------
+-------------  DAQUI PARA BAIXO NÃO FIZ ------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 
 drop materialized view  if exists walkability."bus_route";
 create materialized view walkability."bus_route" AS (
@@ -151,4 +153,51 @@ where
 );
 
 
+----------------------------------------------------------------------------------------------------------
 
+drop materialized view  if exists walkability."ferry_route";
+create materialized view walkability."ferry_route" AS (
+select 
+	pp.osm_id, pp.name, pp.way, pp.tags->'route_name' as route_name, ref, operator, tags->'via' as via,
+	tags->'from' as from, tags->'to' as "to" 
+from 
+	public.planet_osm_line pp, layers.admin0_countries cc 
+where 
+	route='ferry' and cc.sovereignt = 'Brasil' and ST_Within( pp.way, cc.geom) 
+);
+
+----------------------------------------------------------------------------------------------------------
+
+drop materialized view  if exists walkability."tram_station";
+create materialized view walkability."tram_station" AS (
+select 
+	pp.osm_id, pp.name, pp.way
+from 
+	public.planet_osm_point pp, layers.admin0_countries cc 
+where 
+	public_transport='station' and railway = 'tram_stop' and cc.sovereignt = 'Brasil' and ST_Within( pp.way, cc.geom) 
+);
+
+----------------------------------------------------------------------------------------------------------
+
+drop materialized view  if exists walkability."tram_line";
+create materialized view walkability."tram_line" AS (
+select 
+	pp.osm_id, pp.name, pp.way
+from 
+	public.planet_osm_line pp, layers.admin0_countries cc 
+where 
+	railway='tram' and cc.sovereignt = 'Brasil' and ST_Within( pp.way, cc.geom) 
+);
+
+----------------------------------------------------------------------------------------------------------
+
+drop materialized view  if exists walkability."metro_station";
+create materialized view walkability."metro_station" AS (
+select 
+	pp.osm_id, pp.name, pp.way
+from 
+	public.planet_osm_line pp, layers.admin0_countries cc 
+where 
+	railway='station' and station = 'subway' and cc.sovereignt = 'Brasil' and ST_Within( pp.way, cc.geom) -- public_transport='stop_position'
+);

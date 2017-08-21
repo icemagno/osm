@@ -1,7 +1,7 @@
 
 Export:
 
-$ pgsql2shp -f the_shape_file -h localhost -u postgres -P password the_database "SELECT sp_count, geom FROM the_table WHERE province = 'Gauteng'"
+pgsql2shp -f the_shape_file -h localhost -u postgres -P password the_database "SELECT sp_count, geom FROM the_table WHERE province = 'Gauteng'"
 
 If you wanted to save a whole table as a shapefile, just use the table name as the query.
 
