@@ -1,24 +1,24 @@
 [ ] animal_shelter
 [ ] vending_machine
 [X] prison
-dojo
+[ ] dojo
 [X] shelter
 [X] bench
 [X] embassy
-police
-recycling
-post_box
-marketplace
-post_office
-waste_disposal
-animal_boarding
-place_of_worship
-courthouse
-fire_station
-dive_centre
-toilets
-townhall
-internet_cafe
-gym
-shower
-telephone
+[X] police
+[X] recycling
+[X] post_box
+[ ] marketplace
+[X] post_office
+[ ] waste_disposal
+[ ] animal_boarding
+[ ] place_of_worship --------------- >> http://wiki.openstreetmap.org/wiki/Key:religion
+[X] courthouse
+[X] fire_station
+[X] dive_centre
+[X] toilets
+[X] townhall
+[X] internet_cafe
+[ ] gym
+[ ] shower
+[X] telephone
