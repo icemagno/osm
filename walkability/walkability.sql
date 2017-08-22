@@ -164,7 +164,6 @@ where
 
 ----------------------------------------------------------------------------------------------------------
 
-
 drop materialized view  if exists walkability."natural_green";
 create materialized view walkability."natural_green" AS (
 select 
@@ -174,6 +173,20 @@ from
 where 
 	"natural" in ('wood','scrub','heath','moor','grassland','grassland') and cc.sovereignt = 'Brasil' and ST_Within( pp.way, cc.geom) 
 );
+
+----------------------------------------------------------------------------------------------------------
+
+drop materialized view  if exists walkability."historic_points";
+create materialized view walkability."historic_points" AS (
+select 
+	pp.osm_id, pp.historic, pp.landuse, pp.name, pp.religion, pp.denomination, pp.tags->'inscription' as inscription,
+	pp.tags->'memorial' as memorial, pp.tags->'tourism' as tourism, pp.tags->'description' as description, way
+from 
+	public.planet_osm_point pp, layers.admin0_countries cc 
+where 
+	"historic" is not null and cc.sovereignt = 'Brasil' and ST_Within( pp.way, cc.geom) 
+);
+
 
 
 ----------------------------------------------------------------------------------------------------------
