@@ -1,0 +1,24 @@
+[ ] animal_shelter
+[ ] vending_machine
+[X] prison
+dojo
+[X] shelter
+[X] bench
+[X] embassy
+police
+recycling
+post_box
+marketplace
+post_office
+waste_disposal
+animal_boarding
+place_of_worship
+courthouse
+fire_station
+dive_centre
+toilets
+townhall
+internet_cafe
+gym
+shower
+telephone
