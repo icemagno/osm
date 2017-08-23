@@ -12,7 +12,7 @@
 [X] post_office
 [ ] waste_disposal
 [ ] animal_boarding
-[ ] place_of_worship --------------- >> http://wiki.openstreetmap.org/wiki/Key:religion
+[X] place_of_worship --------------- >> http://wiki.openstreetmap.org/wiki/Key:religion
 [X] courthouse
 [X] fire_station
 [X] dive_centre

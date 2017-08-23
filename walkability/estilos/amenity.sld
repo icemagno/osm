@@ -38,6 +38,72 @@
 							  <ogc:PropertyName>amenity</ogc:PropertyName>
 							  <ogc:Literal>swingerclub</ogc:Literal>
 							</ogc:PropertyIsNotEqualTo>	
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>gambling</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	                          
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>bbq</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	                             
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>gym</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	                              
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>waste_disposal</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	   
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>vending_machine</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>marketplace</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	                            
+							
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>dojo</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>animal_shelter</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>animal_boarding</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>shower</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  							
+
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>baby_hatch</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>nursing_home</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>social_facility</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
 							
 						</ogc:And>
 					</ogc:Filter>                  
@@ -48,7 +114,7 @@
                                 <OnlineResource xlink:type="simple" xlink:href="symbols/${amenity}.png" />
                                 <Format>image/png</Format>
                             </ExternalGraphic>
-                            <Size>11</Size>
+                            <Size>13</Size>
 						</Graphic>
 					</PointSymbolizer>
 				</Rule>
@@ -83,6 +149,72 @@
 							  <ogc:Literal>swingerclub</ogc:Literal>
 							</ogc:PropertyIsEqualTo>	
 							
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>gambling</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+                          
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>bbq</ogc:Literal>
+							</ogc:PropertyIsEqualTo>                          
+                          
+                          
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>gym</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+                          
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>waste_disposal</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   
+                          
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>vending_machine</ogc:Literal>
+							</ogc:PropertyIsEqualTo>    
+                          
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>marketplace</ogc:Literal>
+							</ogc:PropertyIsEqualTo>                              
+							
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>dojo</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+                          
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>animal_shelter</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   
+							
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>animal_boarding</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>shower</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   
+							
+                          	<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>baby_hatch</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   
+
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>nursing_home</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>social_facility</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+							
 						</ogc:Or>
 					</ogc:Filter>                  
                 
@@ -99,34 +231,6 @@
 					</PointSymbolizer>				
 				</Rule>
 			              
-				<Rule>
-					<TextSymbolizer>
-                        <VendorOption name="spaceAround">10</VendorOption>
-						<Label>
-							<ogc:PropertyName>name</ogc:PropertyName>
-						</Label>
-						<Font>
-							<CssParameter name="font-family">Dialog</CssParameter>
-							<CssParameter name="font-size">9</CssParameter>
-						</Font>
-						<LabelPlacement>
-							<PointPlacement>
-								<AnchorPoint>
-									<AnchorPointX>0.5</AnchorPointX>
-									<AnchorPointY>0.0</AnchorPointY>
-								</AnchorPoint>
-								<Displacement>
-									<DisplacementX>0</DisplacementX>
-									<DisplacementY>-17</DisplacementY>
-								</Displacement>
-							</PointPlacement>
-						</LabelPlacement>
-						<Fill>
-							<CssParameter name="fill">#990099</CssParameter>
-						</Fill>
-					</TextSymbolizer>
-				</Rule>
-		 
 			</FeatureTypeStyle>
 		</UserStyle>
 	</NamedLayer>
