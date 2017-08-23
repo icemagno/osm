@@ -103,8 +103,90 @@
 							<ogc:PropertyIsNotEqualTo>
 							  <ogc:PropertyName>amenity</ogc:PropertyName>
 							  <ogc:Literal>social_facility</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	 
+ 							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>college</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+ 							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>kindergarden</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+ 							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>public_bookcase</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>school</ogc:Literal>
 							</ogc:PropertyIsNotEqualTo>	  	
 							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>music_school</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>driving_school</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>language_school</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+							
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>university</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>bicycle_repair_station</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+                          
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>boat_sharing</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>car_sharing</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>ferry_terminal</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>grit_bin</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>parking</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>parking_entrance</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	  	
+                          
+							<ogc:PropertyIsNotEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>parking_space</ogc:Literal>
+							</ogc:PropertyIsNotEqualTo>	                            
+                          
 						</ogc:And>
 					</ogc:Filter>                  
                 
@@ -213,8 +295,92 @@
 							<ogc:PropertyIsEqualTo>
 							  <ogc:PropertyName>amenity</ogc:PropertyName>
 							  <ogc:Literal>social_facility</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>college</ogc:Literal>
 							</ogc:PropertyIsEqualTo>   							
 							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>kindergarden</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>public_bookcase</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>school</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>music_school</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>driving_school</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>language_school</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>university</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>bicycle_repair_station</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+                          
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>parking_entrance</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+						
+                            <ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>parking_space</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+
+                          
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>parking</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+                          
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>grit_bin</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+                          
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>ferry_terminal</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+                          
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>car_sharing</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+                          
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>amenity</ogc:PropertyName>
+							  <ogc:Literal>boat_sharing</ogc:Literal>
+							</ogc:PropertyIsEqualTo>   							
+                          
+                          
+                          
 						</ogc:Or>
 					</ogc:Filter>                  
                 
@@ -223,7 +389,7 @@
 							<Mark>
 								<WellKnownName>circle</WellKnownName>
 								<Fill>
-									<CssParameter name="fill">#a36a00</CssParameter>
+									<CssParameter name="fill">#734a08</CssParameter>
 								</Fill>
 							</Mark>
 							<Size>6</Size>
