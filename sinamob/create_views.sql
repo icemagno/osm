@@ -1,4 +1,102 @@
-﻿
+﻿/*
+
+A consulta abaixo (para pontos) também pega as plataformas...
+
+drop materialized view  if exists sinamob."plataformas";
+create materialized view sinamob.plataformas as (
+
+select osm_id, "seamark:information" as information, aeroway, man_made, name, operator, ref, tags->'seamark:platform:category' as category,
+ tags->'storage' as storage,  way from planet_osm_point where "seamark:type" = 'platform'
+
+);
+*/
+
+/* ------------------------------------------------------------------------------------- */
+drop materialized view  if exists sinamob."oleo_gas_areas";
+create materialized view sinamob.oleo_gas_areas as (
+select 
+   amenity, man_made, name, operator, "seamark:type" as seamark_type, tags->'type' as type, tags->'industrial' as industrial, landuse, tags->'pump' as pump, tags->'pump:type' as pump_type, tags->'well:type' as well_type, tags->'communication' as communication,
+   tags->'pumping_station' as pumping_station, tags->'seamark:platform:category' as seamark_platform_category, tags->'offloading' as offloading,
+   tags->'production' as production, tags->'storage' as storage, waterway, "seamark:information" as information, aeroway, tags->'border_type' as border_type, tags->'resource' as "resource", way
+ from planet_osm_polygon where
+	man_made in ('fuel_deport', 'fuel_depot', 'storage_tank', 'tank', 'oil_tank', 'fuel_storage_tank', 'fuel_tank', 'floating_storage', 'gasometer', 'gas_cavern', 'resevoir_covered','submarine_cable', 'adit', 'mineshaft', 'oil_terminal', 'regulating_station','distribution_station', 'regulating_station','distribution_station','pumping_station','oil_pump','gas_station','pipeline','pipeline_station','gas_station','gas_valve', 'pipeline_marker','pipelinemarker','petroleum_well','offshore_platform','oil_well','pumping_rig',
+	'rig','pumpjack','injection_well','oil_drilling','oilfield','oil_field','gasfield','gas_field','flare','flare_stack','flarestack') or
+	
+	landuse in ('railway', 'resevoir', 'landfill', 'well','wellsite','industrial','quarry','surface_mining') or amenity = 'fuel' or water='resevoir' or
+	
+	tags->'generator:source' ='hydro' or  
+	
+	(  boundary='maritime' and tags->'border_type' = 'eez' )  or (  boundary='maritime' and tags->'border_type' = 'contiguous' ) or 
+
+	tags->'industrial' in ('oil_depot', 'oil_storage', 'oil_tank_farm', 'oil_sands', 'flare_site','refinery','oil_refinery','well_cluster','wellsite','hydrocarbon_field','oil_field','oil','gas') or
+	
+	"seamark:type" = 'ferry_route' or "seamark:type" = 'cable_overhead' or "seamark:type" = 'cable_submarine' or  "seamark:type" = 'pipeline_submarine' or "seamark:type" = 'platform' or tags->'oil' = 'station' or tags->'gas' = 'station' or tags->'gas' = 'substation'
+	or waterway in ('offshore_field','dam') or "seamark:harbour:category" = 'tanker' 
+    
+	
+);
+CREATE INDEX "oleo_gas_areas_way_idx" ON sinamob."oleo_gas_areas" USING gist (way);
+CREATE INDEX "oleo_gas_areas_id_idx" ON sinamob."oleo_gas_areas" USING btree (osm_id);
+
+
+drop materialized view  if exists sinamob."oleo_gas_linhas";
+create materialized view sinamob.oleo_gas_linhas as (
+select 
+   amenity, man_made, name, operator, "seamark:type" as seamark_type, tags->'type' as type, tags->'industrial' as industrial, landuse, tags->'pump' as pump, tags->'pump:type' as pump_type, tags->'well:type' as well_type, tags->'communication' as communication,
+   tags->'pumping_station' as pumping_station, tags->'seamark:platform:category' as seamark_platform_category, tags->'offloading' as offloading,
+   tags->'production' as production, tags->'storage' as storage, waterway, "seamark:information" as information, aeroway, tags->'border_type' as border_type, tags->'resource' as "resource",way
+ from planet_osm_line where
+	man_made in ('fuel_deport', 'fuel_depot', 'storage_tank', 'tank', 'oil_tank', 'fuel_storage_tank', 'fuel_tank', 'floating_storage', 'gasometer', 'gas_cavern', 'resevoir_covered','submarine_cable', 'adit', 'mineshaft', 'oil_terminal', 'regulating_station','distribution_station', 'regulating_station','distribution_station','pumping_station','oil_pump','gas_station','pipeline','pipeline_station','gas_station','gas_valve', 'pipeline_marker','pipelinemarker','petroleum_well','offshore_platform','oil_well','pumping_rig',
+	'rig','pumpjack','injection_well','oil_drilling','oilfield','oil_field','gasfield','gas_field','flare','flare_stack','flarestack') or
+	
+	landuse in ('railway', 'resevoir', 'landfill', 'well','wellsite','industrial','quarry','surface_mining') or amenity = 'fuel' or water='resevoir' or
+	
+	tags->'generator:source' ='hydro' or 
+	
+	(  boundary='maritime' and tags->'border_type' = 'eez' )  or (  boundary='maritime' and tags->'border_type' = 'contiguous' ) or 
+
+	tags->'industrial' in ('oil_depot', 'oil_storage', 'oil_tank_farm', 'oil_sands', 'flare_site','refinery','oil_refinery','well_cluster','wellsite','hydrocarbon_field','oil_field','oil','gas') or
+	
+	"seamark:type" = 'ferry_route' or "seamark:type" = 'cable_overhead' or "seamark:type" = 'cable_submarine' or  "seamark:type" = 'pipeline_submarine' or "seamark:type" = 'platform' or tags->'oil' = 'station' or tags->'gas' = 'station' or tags->'gas' = 'substation'
+	or waterway in ('offshore_field','dam') or "seamark:harbour:category" = 'tanker' 
+    
+	
+);
+CREATE INDEX "oleo_gas_linhas_way_idx" ON sinamob."oleo_gas_linhas" USING gist (way);
+CREATE INDEX "oleo_gas_linhas_id_idx" ON sinamob."oleo_gas_linhas" USING btree (osm_id);
+
+
+drop materialized view  if exists sinamob."oleo_gas_pontos";
+create materialized view sinamob.oleo_gas_pontos as (
+select 
+   amenity, man_made, name, operator, "seamark:type" as seamark_type, tags->'type' as type, tags->'industrial' as industrial, landuse, tags->'pump' as pump, tags->'pump:type' as pump_type, tags->'well:type' as well_type, tags->'communication' as communication, railway,
+   tags->'pumping_station' as pumping_station, tags->'seamark:platform:category' as seamark_platform_category, tags->'offloading' as offloading,
+   tags->'production' as production, tags->'storage' as storage, waterway, "seamark:information" as information, aeroway, tags->'border_type' as border_type, tags->'resource' as "resource",way
+ from planet_osm_point where
+	man_made in ('fuel_deport', 'fuel_depot', 'storage_tank', 'tank', 'oil_tank', 'fuel_storage_tank', 'fuel_tank', 'floating_storage', 'gasometer', 'gas_cavern', 'resevoir_covered','submarine_cable', 'adit', 'mineshaft', 'oil_terminal', 'regulating_station','distribution_station', 'regulating_station','distribution_station','pumping_station','oil_pump','gas_station','pipeline','pipeline_station','gas_station','gas_valve', 'pipeline_marker','pipelinemarker','petroleum_well','offshore_platform','oil_well','pumping_rig',
+	'rig','pumpjack','injection_well','oil_drilling','oilfield','oil_field','gasfield','gas_field','flare','flare_stack','flarestack') or
+	
+	landuse in ('railway', 'resevoir', 'landfill', 'well','wellsite','industrial','quarry','surface_mining') or amenity = 'fuel' or water='resevoir' or
+	
+	tags->'generator:source' ='hydro' or 
+	
+	(  boundary='maritime' and tags->'border_type' = 'eez' )  or (  boundary='maritime' and tags->'border_type' = 'contiguous' ) or
+
+	tags->'industrial' in ('oil_depot', 'oil_storage', 'oil_tank_farm', 'oil_sands', 'flare_site','refinery','oil_refinery','well_cluster','wellsite','hydrocarbon_field','oil_field','oil','gas') or
+	
+	"seamark:type" = 'ferry_route' or "seamark:type" = 'cable_overhead' or "seamark:type" = 'cable_submarine' or  "seamark:type" = 'pipeline_submarine' or "seamark:type" = 'platform' or tags->'oil' = 'station' or tags->'gas' = 'station' or tags->'gas' = 'substation'
+	or waterway in ('offshore_field','dam') or "seamark:harbour:category" = 'tanker' 
+    
+	
+);
+CREATE INDEX "oleo_gas_pontos_way_idx" ON sinamob."oleo_gas_pontos" USING gist (way);
+CREATE INDEX "oleo_gas_pontos_id_idx" ON sinamob."oleo_gas_pontos" USING btree (osm_id);
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
 drop materialized view if exists sinamob."rios_esp_line"; 
 create materialized view sinamob."rios_esp_line" AS (
  SELECT osm_id,
