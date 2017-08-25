@@ -36,10 +36,8 @@
                             
 							<ogc:PropertyIsEqualTo>
 							  <ogc:PropertyName>shop</ogc:PropertyName>
-							  <ogc:Literal>beverages</ogc:Literal>
+							  <ogc:Literal>laundry</ogc:Literal>
 							</ogc:PropertyIsEqualTo>                          
-
-
 
 							<ogc:PropertyIsEqualTo>
 							  <ogc:PropertyName>shop</ogc:PropertyName>
@@ -166,7 +164,150 @@
 							  <ogc:Literal>doityourself</ogc:Literal>
 							</ogc:PropertyIsEqualTo>       							
 
-
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>hardware</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>garden_centre</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>florist</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>furniture</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>computer</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>electronics</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>hifi</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>furniture</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>mobile_phone</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>bicycle</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>car</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>car_repair</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>car_parts</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>motorcycle</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>outdoor</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>sports</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>art</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>musical_instrument</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>photo</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>books</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>gift</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>newsagent</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>stationery</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>copyshop</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>dry_cleaning</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>pet</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>tobacco</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>toys</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
+							
+							<ogc:PropertyIsEqualTo>
+							  <ogc:PropertyName>shop</ogc:PropertyName>
+							  <ogc:Literal>travel_agency</ogc:Literal>
+							</ogc:PropertyIsEqualTo>  
 							
 						</ogc:Or>
 					</ogc:Filter>                     
