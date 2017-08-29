@@ -330,19 +330,39 @@ create materialized view layers."water-outline" AS (
   SELECT osm_id, "natural", "landuse", "waterway", "way"
   FROM planet_osm_polygon
   WHERE "natural" IN ('lake','water')
-  OR "waterway" IN ('canal','mill_pond','riverbank')
+  OR "waterway" IN ('canal','mill_pond','riverbank','river')
   OR "landuse" IN ('basin','reservoir','water')
   ORDER BY osm_id ASC
 );
 CREATE INDEX "water-outline_way_idx" ON layers."water-outline" USING gist (way);
 CREATE INDEX "water-outline_id_idx" ON layers."water-outline" USING btree (osm_id);
 
+drop materialized view  if exists layers."smallriver";
+create materialized view layers."smallriver" AS ( 
+  SELECT osm_id, "natural", "landuse", "waterway", "way", "name"
+  FROM planet_osm_line
+  WHERE "waterway" = 'river'
+  ORDER BY osm_id asc
+);
+CREATE INDEX "smallriver_way_idx" ON layers."smallriver" USING gist (way);
+CREATE INDEX "smallriver_id_idx" ON layers."smallriver" USING btree (osm_id);
+
+drop materialized view  if exists layers."tinnyriver";
+create materialized view layers."tinnyriver" AS ( 
+  SELECT osm_id, "natural", "landuse", "waterway", "way", "name"
+  FROM planet_osm_line
+  WHERE "waterway" = 'stream'
+  ORDER BY osm_id asc
+);
+CREATE INDEX "tinnyriver_way_idx" ON layers."tinnyriver" USING gist (way);
+CREATE INDEX "tinnyriver_id_idx" ON layers."tinnyriver" USING btree (osm_id);
+
 drop materialized view  if exists layers."water";
 create materialized view layers."water" AS ( 
   SELECT osm_id, "natural", "landuse", "waterway", "way", "name"
   FROM planet_osm_polygon
   WHERE "natural" IN ('lake','water')
-  OR "waterway" IN ('canal','mill_pond','riverbank')
+  OR "waterway" IN ('canal','mill_pond','riverbank', 'river')
   OR "landuse" IN ('basin','reservoir','water')
   ORDER BY osm_id asc
 );
