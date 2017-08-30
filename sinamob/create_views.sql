@@ -22,7 +22,7 @@ select
 	man_made in ('fuel_deport', 'fuel_depot', 'storage_tank', 'tank', 'oil_tank', 'fuel_storage_tank', 'fuel_tank', 'floating_storage', 'gasometer', 'gas_cavern', 'resevoir_covered','submarine_cable', 'adit', 'mineshaft', 'oil_terminal', 'regulating_station','distribution_station', 'regulating_station','distribution_station','pumping_station','oil_pump','gas_station','pipeline','pipeline_station','gas_station','gas_valve', 'pipeline_marker','pipelinemarker','petroleum_well','offshore_platform','oil_well','pumping_rig',
 	'rig','pumpjack','injection_well','oil_drilling','oilfield','oil_field','gasfield','gas_field','flare','flare_stack','flarestack') or
 	
-	landuse in ('railway', 'resevoir', 'landfill', 'well','wellsite','industrial','quarry','surface_mining') or amenity = 'fuel' or water='resevoir' or
+	landuse in ('railway', 'resevoir', 'landfill', 'well','wellsite','industrial','quarry','surface_mining') or water='resevoir' or
 	
 	tags->'generator:source' ='hydro' or  
 	
@@ -49,7 +49,7 @@ select
 	man_made in ('fuel_deport', 'fuel_depot', 'storage_tank', 'tank', 'oil_tank', 'fuel_storage_tank', 'fuel_tank', 'floating_storage', 'gasometer', 'gas_cavern', 'resevoir_covered','submarine_cable', 'adit', 'mineshaft', 'oil_terminal', 'regulating_station','distribution_station', 'regulating_station','distribution_station','pumping_station','oil_pump','gas_station','pipeline','pipeline_station','gas_station','gas_valve', 'pipeline_marker','pipelinemarker','petroleum_well','offshore_platform','oil_well','pumping_rig',
 	'rig','pumpjack','injection_well','oil_drilling','oilfield','oil_field','gasfield','gas_field','flare','flare_stack','flarestack') or
 	
-	landuse in ('railway', 'resevoir', 'landfill', 'well','wellsite','industrial','quarry','surface_mining') or amenity = 'fuel' or water='resevoir' or
+	landuse in ('railway', 'resevoir', 'landfill', 'well','wellsite','industrial','quarry','surface_mining') or water='resevoir' or
 	
 	tags->'generator:source' ='hydro' or 
 	
@@ -76,7 +76,7 @@ select
 	man_made in ('fuel_deport', 'fuel_depot', 'storage_tank', 'tank', 'oil_tank', 'fuel_storage_tank', 'fuel_tank', 'floating_storage', 'gasometer', 'gas_cavern', 'resevoir_covered','submarine_cable', 'adit', 'mineshaft', 'oil_terminal', 'regulating_station','distribution_station', 'regulating_station','distribution_station','pumping_station','oil_pump','gas_station','pipeline','pipeline_station','gas_station','gas_valve', 'pipeline_marker','pipelinemarker','petroleum_well','offshore_platform','oil_well','pumping_rig',
 	'rig','pumpjack','injection_well','oil_drilling','oilfield','oil_field','gasfield','gas_field','flare','flare_stack','flarestack') or
 	
-	landuse in ('railway', 'resevoir', 'landfill', 'well','wellsite','industrial','quarry','surface_mining') or amenity = 'fuel' or water='resevoir' or
+	landuse in ('railway', 'resevoir', 'landfill', 'well','wellsite','industrial','quarry','surface_mining') or water='resevoir' or
 	
 	tags->'generator:source' ='hydro' or 
 	
