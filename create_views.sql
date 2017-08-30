@@ -376,3 +376,16 @@ create materialized view layers."wetland" AS (
 );
 CREATE INDEX "wetland_way_idx" ON layers."wetland" USING gist (way);
 CREATE INDEX "wetland_id_idx" ON layers."wetland" USING btree (osm_id);
+
+
+drop materialized view  if exists layers."apa";
+create materialized view layers."apa" AS (
+  SELECT osm_id, way, "name" FROM planet_osm_polygon
+  WHERE boundary='protected_area' and leisure='nature_reserve' order by osm_id asc
+);
+CREATE INDEX "apa_way_idx" ON layers."apa" USING gist (way);
+CREATE INDEX "apa_id_idx" ON layers."apa" USING btree (osm_id);
+
+
+
+
