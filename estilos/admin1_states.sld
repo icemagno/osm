@@ -71,7 +71,7 @@
            </sld:Label>
            <sld:Font>
               <sld:CssParameter name="font-family">Dialog</sld:CssParameter>
-              <sld:CssParameter name="font-size">13.0</sld:CssParameter>
+              <sld:CssParameter name="font-size">11.0</sld:CssParameter>
               <sld:CssParameter name="font-style">italic</sld:CssParameter>
               <sld:CssParameter name="font-weight">normal</sld:CssParameter>
            </sld:Font>
@@ -100,11 +100,11 @@
         
         
         <sld:Rule>
-         <!-- 1:35 ate 1:9 -->
-         <!-- MIN: 9  000000.0 --> 
-         <!-- MAX: 18 000000.0 --> 
-         <sld:MinScaleDenominator>9000000.0</sld:MinScaleDenominator>
-         <sld:MaxScaleDenominator>18000000.0</sld:MaxScaleDenominator>          
+         <!-- 1:35 ate 1:15 -->
+         <!-- MIN: 15  000000.0 --> 
+         <!-- MAX: 35 000000.0 --> 
+         <sld:MinScaleDenominator>15000000.0</sld:MinScaleDenominator>
+         <sld:MaxScaleDenominator>35000000.0</sld:MaxScaleDenominator>          
           
           <sld:LineSymbolizer>
             <sld:Stroke>
@@ -112,18 +112,35 @@
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
 			  <sld:CssParameter name="stroke-dasharray">2 6</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.08</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.3</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>
 
+		<sld:Rule>
+         <!-- 1:15 ate 1:9 -->
+         <!-- MIN: 9  000000.0 --> 
+         <!-- MAX: 15 000000.0 --> 
+         <sld:MinScaleDenominator>9000000.0</sld:MinScaleDenominator>
+         <sld:MaxScaleDenominator>15000000.0</sld:MaxScaleDenominator>          
+          
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#dab5ff</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
+              <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
+			  <sld:CssParameter name="stroke-dasharray">2 6</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.6</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
 
         <sld:Rule>
          <!-- 1:9 ate 0 -->
          <!-- MIN: 3 00000.0 -->
          <!-- MAX: 9 000000.0 -->
          <!-- <sld:MinScaleDenominator>3000000.0</sld:MinScaleDenominator> -->
-         <sld:MaxScaleDenominator>9000000.0</sld:MaxScaleDenominator>           
+         <sld:MaxScaleDenominator>8999999.9</sld:MaxScaleDenominator>           
           
           <sld:LineSymbolizer>
             <sld:Stroke>
@@ -131,7 +148,7 @@
               <sld:CssParameter name="stroke-linecap">round</sld:CssParameter>
               <sld:CssParameter name="stroke-linejoin">round</sld:CssParameter>
               <sld:CssParameter name="stroke-dasharray">2 6</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.01</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.0</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>        
