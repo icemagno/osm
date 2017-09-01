@@ -6,7 +6,7 @@
       <sld:FeatureTypeStyle>
         <sld:Name>name</sld:Name>
         <sld:Rule>
-          <sld:MaxScaleDenominator>8000000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>19000000.0</sld:MaxScaleDenominator>
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:CssParameter name="fill">#b5d0d0</sld:CssParameter>
