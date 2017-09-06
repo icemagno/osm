@@ -15,7 +15,7 @@ select osm_id, "seamark:information" as information, aeroway, man_made, name, op
 drop materialized view  if exists sinamob."oleo_gas_areas";
 create materialized view sinamob.oleo_gas_areas as (
 select 
-   amenity, man_made, name, operator, "seamark:type" as seamark_type, tags->'type' as type, tags->'industrial' as industrial, landuse, tags->'pump' as pump, tags->'pump:type' as pump_type, tags->'well:type' as well_type, tags->'communication' as communication,
+   osm_id,amenity, man_made, name, operator, "seamark:type" as seamark_type, tags->'type' as type, tags->'industrial' as industrial, landuse, tags->'pump' as pump, tags->'pump:type' as pump_type, tags->'well:type' as well_type, tags->'communication' as communication,
    tags->'pumping_station' as pumping_station, tags->'seamark:platform:category' as seamark_platform_category, tags->'offloading' as offloading,
    tags->'production' as production, tags->'storage' as storage, waterway, "seamark:information" as information, aeroway, tags->'border_type' as border_type, tags->'resource' as "resource", way
  from planet_osm_polygon where
@@ -41,7 +41,7 @@ CREATE INDEX "oleo_gas_areas_id_idx" ON sinamob."oleo_gas_areas" USING btree (os
 
 drop materialized view  if exists sinamob."oleo_gas_linhas";
 create materialized view sinamob.oleo_gas_linhas as (
-select 
+select osm_id,
    amenity, man_made, name, operator, "seamark:type" as seamark_type, tags->'type' as type, tags->'industrial' as industrial, landuse, tags->'pump' as pump, tags->'pump:type' as pump_type, tags->'well:type' as well_type, tags->'communication' as communication,
    tags->'pumping_station' as pumping_station, tags->'seamark:platform:category' as seamark_platform_category, tags->'offloading' as offloading,
    tags->'production' as production, tags->'storage' as storage, waterway, "seamark:information" as information, aeroway, tags->'border_type' as border_type, tags->'resource' as "resource",way
@@ -68,7 +68,7 @@ CREATE INDEX "oleo_gas_linhas_id_idx" ON sinamob."oleo_gas_linhas" USING btree (
 
 drop materialized view  if exists sinamob."oleo_gas_pontos";
 create materialized view sinamob.oleo_gas_pontos as (
-select 
+select osm_id,
    amenity, man_made, name, operator, "seamark:type" as seamark_type, tags->'type' as type, tags->'industrial' as industrial, landuse, tags->'pump' as pump, tags->'pump:type' as pump_type, tags->'well:type' as well_type, tags->'communication' as communication, railway,
    tags->'pumping_station' as pumping_station, tags->'seamark:platform:category' as seamark_platform_category, tags->'offloading' as offloading,
    tags->'production' as production, tags->'storage' as storage, waterway, "seamark:information" as information, aeroway, tags->'border_type' as border_type, tags->'resource' as "resource",way
