@@ -231,3 +231,54 @@ where
 	railway='tram' and cc.sovereignt = 'Brasil' and ST_Within( pp.way, cc.geom) 
 );
 
+----------------------------------------------------------------------------------------------------------
+CREATE INDEX "sustenance_way_idx" ON walkability."sustenance" USING gist (way);
+CREATE INDEX "sustenance_id_idx" ON walkability."sustenance" USING btree (osm_id);
+
+CREATE INDEX "education_way_idx" ON walkability."education" USING gist (way);
+CREATE INDEX "education_id_idx" ON walkability."education" USING btree (osm_id);
+
+CREATE INDEX "transportation_way_idx" ON walkability."transportation" USING gist (way);
+CREATE INDEX "transportation_id_idx" ON walkability."transportation" USING btree (osm_id);
+
+CREATE INDEX "financial_way_idx" ON walkability."financial" USING gist (way);
+CREATE INDEX "financial_id_idx" ON walkability."financial" USING btree (osm_id);
+
+CREATE INDEX "healthcare_way_idx" ON walkability."healthcare" USING gist (way);
+CREATE INDEX "healthcare_id_idx" ON walkability."healthcare" USING btree (osm_id);
+
+CREATE INDEX "entertainment_arts_culture_way_idx" ON walkability."entertainment_arts_culture" USING gist (way);
+CREATE INDEX "entertainment_arts_culture_id_idx" ON walkability."entertainment_arts_culture" USING btree (osm_id);
+
+CREATE INDEX "amenity_others_way_idx" ON walkability."amenity_others" USING gist (way);
+CREATE INDEX "amenity_others_id_idx" ON walkability."amenity_others" USING btree (osm_id);
+
+CREATE INDEX "tourism_way_idx" ON walkability."tourism" USING gist (way);
+CREATE INDEX "tourism_id_idx" ON walkability."tourism" USING btree (osm_id);
+
+CREATE INDEX "shop_way_idx" ON walkability."shop" USING gist (way);
+CREATE INDEX "shop_id_idx" ON walkability."shop" USING btree (osm_id);
+
+CREATE INDEX "leisure_way_idx" ON walkability."leisure" USING gist (way);
+CREATE INDEX "leisure_id_idx" ON walkability."leisure" USING btree (osm_id);
+
+CREATE INDEX "stations_way_idx" ON walkability."stations" USING gist (way);
+CREATE INDEX "stations_id_idx" ON walkability."stations" USING btree (osm_id);
+
+CREATE INDEX "bus_stop_way_idx" ON walkability."bus_stop" USING gist (way);
+CREATE INDEX "bus_stop_id_idx" ON walkability."bus_stop" USING btree (osm_id);
+
+CREATE INDEX "natural_green_way_idx" ON walkability."natural_green" USING gist (way);
+CREATE INDEX "natural_green_id_idx" ON walkability."natural_green" USING btree (osm_id);
+
+CREATE INDEX "historic_points_way_idx" ON walkability."historic_points" USING gist (way);
+CREATE INDEX "historic_points_id_idx" ON walkability."historic_points" USING btree (osm_id);
+
+CREATE INDEX "bus_route_way_idx" ON walkability."bus_route" USING gist (way);
+CREATE INDEX "bus_route_id_idx" ON walkability."bus_route" USING btree (osm_id);
+
+CREATE INDEX "ferry_route_way_idx" ON walkability."ferry_route" USING gist (way);
+CREATE INDEX "ferry_route_id_idx" ON walkability."ferry_route" USING btree (osm_id);
+
+CREATE INDEX "tram_line_way_idx" ON walkability."tram_line" USING gist (way);
+CREATE INDEX "tram_line_id_idx" ON walkability."tram_line" USING btree (osm_id);
