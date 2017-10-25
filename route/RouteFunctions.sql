@@ -79,18 +79,17 @@ LANGUAGE 'plpgsql' VOLATILE;
 /* 
   FUNÇÃO DE CALCULO DE ROTAS 
 */	
-CREATE OR REPLACE FUNCTION public.calc_rotas_v3(
-	source integer,
-	target integer,
-	k integer,
-	directed boolean)
-    RETURNS SETOF "TABLE(seq integer, path_id integer, path_seq integer, node bigint, edge bigint, cost double precision, agg_cost double precision)"
-    LANGUAGE 'sql'
-    COST 100.0
-    STABLE NOT LEAKPROOF 
-    ROWS 1500.0
-AS $function$
+-- Function: public.calc_rotas_v3(integer, integer, integer, boolean)
 
+-- DROP FUNCTION public.calc_rotas_v3(integer, integer, integer, boolean);
+
+CREATE OR REPLACE FUNCTION public.calc_rotas_v3(
+    IN source integer,
+    IN target integer,
+    IN k integer,
+    IN directed boolean)
+  RETURNS TABLE(seq integer, path_id integer, path_seq integer, node bigint, edge bigint, cost double precision, agg_cost double precision) AS
+$BODY$
 SELECT 
     *
 FROM 
@@ -100,8 +99,13 @@ FROM
             WHERE l1.source = ' || $1 || ' OR l1.target = ' || $2 || ') as box
             WHERE r.geom_way && box.box',$1, $2, $3, directed:=$4
     )  
- 
-$function$;
+ $BODY$
+  LANGUAGE sql STABLE
+  COST 100
+  ROWS 1000;
+ALTER FUNCTION public.calc_rotas_v3(integer, integer, integer, boolean)
+  OWNER TO postgres;
+
 
 
 
