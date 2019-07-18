@@ -1,12 +1,6 @@
 #!/bin/bash
 
 
-export JAVA_HOME="/opt/jdk1.8.0_66/"
-export JAVACMD_OPTIONS="-Djava.io.tmpdir=/home/apolo/install_osm/osmupdate/tmp -Dhttp.proxyHost=proxy-1dn.mb -Dhttp.proxyPort=6060 -Dhttp.proxyUser=06902331758 -Dhttp.proxyPassword=nextstep"
-
-export JAVA_OPTS="-Dhttp.proxyHost=proxy-1dn.mb -Dhttp.proxyPort=6060 -Dhttp.proxyUser=06902331758 -Dhttp.proxyPassword=nextstep"
-export JAVA_OPTIONS="-Dhttp.proxyHost=proxy-1dn.mb -Dhttp.proxyPort=6060 -Dhttp.proxyUser=06902331758 -Dhttp.proxyPassword=nextstep"
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk1.8.0_66/bin/"
 
 mkdir ./boundaries
 
@@ -30,6 +24,7 @@ unzip water-polygons-split-4326.zip
 unzip land-polygons-split-4326.zip
 
 export PGPASSWORD=admin
+export PGPASS=admin
 
 echo "Importing land-polygons-split-4326.zip..."
 shp2pgsql -g geom -s 4326 -I -D land-polygons-complete-4326/land_polygons.shp layers.land | psql -U postgres -h localhost -d osm

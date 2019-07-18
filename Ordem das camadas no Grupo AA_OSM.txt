@@ -1,17 +1,17 @@
-	osm:land					land 	
-	osm:ocean					ocean 	
+	osm:land						land 	
+	osm:ocean						ocean 	
 	osm:agriculture					agriculture 	
 	osm:aero-poly					aero-poly 	
-	osm:forest					forest 	
+	osm:forest						forest 	
 	osm:amenity-areas				amenity-areas 	
-	osm:beach					beach 	
+	osm:beach						beach 	
 	osm:water-outline				water-outline 	
-	osm:water					water 	
-	osm:grass					grass 	
+	osm:water						water 	
+	osm:grass						grass 	
 	osm:building					building 	
 	osm:highway-label				highway-label 	
-	osm:park					park 	
-	osm:placenames-medium				placenames-medium 	
+	osm:park						park 	
+	osm:placenames-medium			placenames-medium 	
 	osm:route-bridge-0				route-bridge-0 	
 	osm:route-bridge-1				route-bridge-1 	
 	osm:route-bridge-2				route-bridge-2 	
@@ -21,6 +21,6 @@
 	osm:route-line					route-line 	
 	osm:route-fill					route-fill 	
 	osm:route-tunnels				route-tunnels 	
-	osm:route-turning-circles			route-turning-circles 	
-	osm:paises					admin0_countries 	
+	osm:route-turning-circles		route-turning-circles 	
+	osm:paises						admin0_countries 	
  	osm:admin1_states				admin1_states 

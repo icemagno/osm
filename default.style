@@ -81,10 +81,6 @@
 # end up in the tags hstore column regardless of the style file.
 
 # OsmType  Tag          DataType     Flags
-node,way   access       text         linear
-node,way   addr:housename      text  linear
-node,way   addr:housenumber    text  linear
-node,way   addr:interpolation  text  linear
 node,way   admin_level  text         linear
 node,way   aerialway    text         linear
 node,way   aeroway      text         polygon
@@ -148,6 +144,101 @@ node,way   waterway     text         polygon
 node,way   wetland      text         polygon
 node,way   width        text         linear
 node,way   wood         text         linear
+
+node,way   access							text         linear
+node,way   addr:housenumber					text  		 linear
+node,way   addr:conscriptionnumber			text  		 linear
+node,way   addr:housename					text  		 linear
+node,way   addr:street						text  		 linear
+node,way   addr:place						text  		 linear
+node,way   addr:postcode					text  		 linear
+node,way   addr:flats						text  		 linear
+node,way   addr:city						text  		 linear
+node,way   addr:country						text  		 linear
+node,way   addr:full						text  		 linear
+node,way   addr:hamlet						text  		 linear
+node,way   addr:suburb						text  		 linear
+node,way   addr:subdistrict					text  		 linear
+node,way   addr:district					text  		 linear
+node,way   addr:province					text  		 linear
+node,way   addr:state						text  		 linear
+node,way   addr:interpolation				text  		 linear
+node,way   addr:inclusion					text  		 linear
+node,way   postal_code						text  		 linear
+
+
+node,way   seamark 									text         polygon
+node,way   seamark:type   							text         polygon
+node,way   seamark:information   					text         linear
+node,way   seamark:name   							text         polygon
+node,way   seamark:mooring:category   				text         linear
+node,way   seamark:harbour:category   				text         linear
+node,way   seamark:sea_area:category   				text         polygon
+node,way   seamark:obstruction:category   			text         linear
+node,way   seamark:small_craft_facility:category	text         linear
+node,way   seamark:bridge:category   				text         linear
+node,way   seamark:recommended_track:orientation   	text         linear
+node,way   seamark:shoreline_construction:category 	text         linear
+node,way   seamark:restricted_area:restriction   	text         polygon
+node,way   seamark:restricted_area:category   		text         polygon
+node,way   seamark:faiway:minimum_depth   			text         linear
+node,way   seamark:weed:category   					text         linear
+node,way   seamark:cable_overhead:category   		text         linear
+node,way   seamark:navigation_line:category   		text         linear
+node,way   seamark:source   						text         linear
+node,way   seamark:cable_submarine:category   		text         linear
+node,way   seamark:pipeline_submarine:product   	text         linear
+node,way   seamark:calling-in_point:channel   		text         linear
+node,way   seamark:light:group   					text         linear
+node,way   seamark:light:range   					text         linear
+node,way   seamark:light:colour   					text         polygon
+node,way   seamark:light:height   					text         linear
+node,way   seamark:light:category   				text         linear
+node,way   seamark:light:character   				text         polygon
+node,way   seamark:light:reference   				text         polygon
+node,way   seamark:light:sequence   				text         linear
+node,way   seamark:radar_transponder:group   		text         linear
+node,way   seamark:radar_transponder:category   	text         linear
+node,way   seamark:light:period   					text         linear
+node,way   seamark:light:1:category   				text         linear
+node,way   seamark:light:1:group   					text         linear
+node,way   seamark:light:1:range   					text         linear
+node,way   seamark:light:1:colour   				text         linear
+node,way   seamark:light:1:height   				text         linear
+node,way   seamark:light:1:period   				text         linear
+node,way   seamark:light:1:radius   				text         linear
+node,way   seamark:light:1:sequence   				text         linear
+node,way   seamark:light:1:character   				text         linear
+node,way   seamark:light:1:sector_start   			text         linear
+node,way   seamark:light:1:sector_end   			text         linear
+node,way   seamark:light:2:group   					text         linear
+node,way   seamark:light:2:range   					text         linear
+node,way   seamark:light:2:colour   				text         linear
+node,way   seamark:light:2:height   				text         linear
+node,way   seamark:light:2:period   				text         linear
+node,way   seamark:light:2:radius   				text         linear
+node,way   seamark:light:2:sequence   				text         linear
+node,way   seamark:light:2:character   				text         linear
+node,way   seamark:light:2:sector_start   			text         linear
+node,way   seamark:light:2:sector_end   			text         linear
+node,way   seamark:topmark:shape   					text         linear
+node,way   seamark:topmark:colour   				text         linear
+node,way   seamark:fixme   							text         linear
+node,way   seamark:beacon_lateral:colour   			text         linear
+node,way   seamark:beacon_lateral:system   			text         linear
+node,way   seamark:beacon_lateral:category   		text         linear
+node,way   seamark:beacon_special_purpose:shape   	text         linear
+node,way   seamark:rock:water_level   				text         linear
+node,way   seamark:buoy_special_purpose:shape   	text         linear
+node,way   seamark:buoy_special_purpose:colour   	text         linear
+node,way   seamark:buoy_lateral:shape   			text         linear
+node,way   seamark:buoy_lateral:colour   			text         linear
+node,way   seamark:buoy_lateral:system   			text         linear
+node,way   seamark:wreck:category   				text         linear
+node,way   seamark:wreck:water_level   				text         linear
+node,way   seamark:beacon_special_purpose:colour   	text         linear
+node,way   seamark:beacon_special_purpose:category 	text         linear
+node,way   seamark:calling-in_point:traffic_flow   	text         linear
 node,way   z_order      int4         linear # This is calculated during import
 way        way_area     real         linear # This is calculated during import
 
@@ -171,15 +262,11 @@ way         area:highway            text    polygon,nocolumn
 # They aren't very useful for rendering.
 node,way    note                    text    delete
 node,way    note:*                  text    delete
-node,way    source                  text    delete
-node,way    source_ref              text    delete
-node,way    source:*                text    delete
 node,way    attribution             text    delete
 node,way    comment                 text    delete
 node,way    fixme                   text    delete
 
 # Tags generally dropped by editors, not otherwise covered
-node,way    created_by              text    delete
 node,way    odbl                    text    delete
 node,way    odbl:note               text    delete
 node,way    SK53_bulk:load          text    delete
@@ -226,7 +313,6 @@ node,way    naptan:*                text    delete
 node,way    CLC:*                   text    delete
 
 # misc
-node,way    3dshapes:ggmodelk       text    delete
 node,way    AND_nosr_r              text    delete
 node,way    import                  text    delete
 node,way    it:fvg:*                text    delete
