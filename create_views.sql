@@ -388,4 +388,14 @@ CREATE INDEX "apa_id_idx" ON layers."apa" USING btree (osm_id);
 
 
 
-
+drop materialized view  if exists layers."building3d";
+create materialized view layers."building3d" AS ( 
+  SELECT osm_id, way,building,tags->'height' as height
+  FROM planet_osm_polygon
+  WHERE (building IS NOT NULL
+  AND building != 'no')
+  and tags->'height' is not null
+  ORDER BY osm_id ASC 
+);
+CREATE INDEX "building3d_way_idx" ON layers."building3d" USING gist (way);
+CREATE INDEX "building3d_id_idx" ON layers."building3d" USING btree (osm_id);
