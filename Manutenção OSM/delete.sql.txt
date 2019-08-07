@@ -1,0 +1,70 @@
+delete from public.planet_osm_line where osm_id in
+(
+    select osm_id from public.planet_osm_line
+    where ST_Intersects(way, ST_GeomFromGeoJSON ('{"type":"Polygon","coordinates":[[[-12.48,77.00],[180.00,77.00],[180.00,36.32],[-12.48,36.32],[-12.48,77.00]]],"crs":{"type":"name","properties":{"name":"EPSG:4326"}}}') )
+    limit 16000
+);
+
+
+
+
+delete from public.planet_osm_point where osm_id in
+(
+    select osm_id from public.planet_osm_point
+    where ST_Intersects(way, ST_GeomFromGeoJSON ('{"type":"Polygon","coordinates":[[[-12.48,77.00],[180.00,77.00],[180.00,36.32],[-12.48,36.32],[-12.48,77.00]]],"crs":{"type":"name","properties":{"name":"EPSG:4326"}}}') )
+    limit 16000
+);
+
+
+delete from public.planet_osm_polygon where osm_id in
+(
+    select osm_id from public.planet_osm_polygon
+    where ST_Intersects(way, ST_GeomFromGeoJSON ('{"type":"Polygon","coordinates":[[[-12.48,77.00],[180.00,77.00],[180.00,36.32],[-12.48,36.32],[-12.48,77.00]]],"crs":{"type":"name","properties":{"name":"EPSG:4326"}}}') )
+    limit 16000
+);
+
+delete from public.planet_osm_roads where osm_id in
+(
+    select osm_id from public.planet_osm_roads
+    where ST_Intersects(way, ST_GeomFromGeoJSON ('{"type":"Polygon","coordinates":[[[-12.48,77.00],[180.00,77.00],[180.00,36.32],[-12.48,36.32],[-12.48,77.00]]],"crs":{"type":"name","properties":{"name":"EPSG:4326"}}}') )
+    limit 16000
+);
+
+
+//-------------------------------------------------------------------------------------------------------------
+
+delete from public.planet_osm_line where osm_id in
+(
+    select osm_id from public.planet_osm_line
+    where ST_Intersects(way, ST_GeomFromGeoJSON ('{"type":"Polygon","coordinates":[[[40.78, 41.38] , [40.78, 14.77] , [180.00, 14.77] , [180.00, 41.38] , [40.78, 41.38]]],"crs":{"type":"name","properties":{"name":"EPSG:4326"}}}') )
+    limit 16000
+);
+
+
+delete from public.planet_osm_point where osm_id in
+(
+    select osm_id from public.planet_osm_point
+    where ST_Intersects(way, ST_GeomFromGeoJSON ('{"type":"Polygon","coordinates":[[[40.78, 41.38] , [40.78, 14.77] , [180.00, 14.77] , [180.00, 41.38] , [40.78, 41.38]]],"crs":{"type":"name","properties":{"name":"EPSG:4326"}}}') )
+    limit 16000
+);
+
+
+
+
+delete from public.planet_osm_polygon where osm_id in
+(
+    select osm_id from public.planet_osm_polygon
+    where ST_Intersects(way, ST_GeomFromGeoJSON ('{"type":"Polygon","coordinates":[[[40.78, 41.38] , [40.78, 14.77] , [180.00, 14.77] , [180.00, 41.38] , [40.78, 41.38]]],"crs":{"type":"name","properties":{"name":"EPSG:4326"}}}') )
+    limit 16000
+);
+
+delete from public.planet_osm_roads where osm_id in
+(
+    select osm_id from public.planet_osm_roads
+    where ST_Intersects(way, ST_GeomFromGeoJSON ('{"type":"Polygon","coordinates":[[[40.78, 41.38] , [40.78, 14.77] , [180.00, 14.77] , [180.00, 41.38] , [40.78, 41.38]]],"crs":{"type":"name","properties":{"name":"EPSG:4326"}}}') )
+    limit 16000
+);
+
+
+
+

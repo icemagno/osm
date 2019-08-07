@@ -1,0 +1,3 @@
+
+00 17 * * * /home/apolo/install_osm/osmupdate/update.sh 1> /home/apolo/install_osm/osmupdate/update.log 2> /home/apolo/install_osm/osmupdate/error.log
+00 05 * * * /home/apolo/delete.sh 1> /home/apolo/delete.log 2> /home/apolo/delete.error
